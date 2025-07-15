@@ -16,8 +16,14 @@
 
 </head>
 <body>
-   <nav class="menu_lateral">
+  <div class="main-content">
+    <h1>Planilhas</h1>
+    <table id="tabelha_planilhas"></table>
+  </div>
+  <div class= "menu"> 
+    <nav class="menu_lateral" id="menu">
     <div class="btn_menu_lateral">
+      <button class="btn_menu" onclick="toggleMenu()" hidden>
       <i class="bi bi-list"></i>
     </div>
 
@@ -46,8 +52,15 @@
       </ul>
     </div>
   </nav>
+</div>
+
+
+  
 
     
     
 </body>
+
+<!-- Seu script personalizado -->
+<script src="js/planilhas.js"></script>
 </html>

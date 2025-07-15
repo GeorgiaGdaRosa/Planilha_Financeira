@@ -1,10 +1,16 @@
 
 body {
   height: 100vh;
+  background-color: #ebe1c5;
+}
+
+.main-content {
+  padding-left: 100px;
+  padding-top: 70px;
 }
 
 nav.menu_lateral {
-  width: 280px;
+  width: 60px;
   height: 100%;
   background-color:#595643 ;
   padding: 10px 0 40px 1%;
@@ -13,18 +19,23 @@ nav.menu_lateral {
   bottom: 0;
   left: 0;
   overflow: hidden;
+  transition: width 0.3s;
 }
 
 
 .btn_menu_lateral {
   width: 100%;
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 .btn_menu_lateral > i {
   color: aliceblue;
   font-size: 30px;
   cursor: pointer;
+}
+
+.btn_menu {
+  display: inline;
 }
 
 .menu_conteudo {
@@ -67,4 +78,26 @@ ul li.item_menu a .txt_link {
 ul li.item_menu a .icon > i{
   font-size: 30px;
   justify-content: flex-start;
+}
+
+.menu_lateral.menu_aberto {
+  width: 280px;
+}
+
+.menu_conteudo {
+  display: none;
+}
+
+.menu_lateral.menu_aberto .menu_conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn_menu {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
 }
