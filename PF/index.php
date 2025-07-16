@@ -8,17 +8,31 @@
 <!-- CSS -->
 <link rel="stylesheet" href="style.css">
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 <!-- BootStrap Icons -->
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<!-- DataTables CSS com Bootstrap -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+
+<!-- DataTables Responsive CSS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css">
 
 </head>
 <body>
   <div class="main-content">
     <h1>Planilhas</h1>
-    <table id="tabelha_planilhas"></table>
+    <table id="tab_planilhas">
+    <thead>
+    <tr>
+      <th>Planilha</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+  </tbody>
+</table>
+
   </div>
   <div class= "menu"> 
     <nav class="menu_lateral" id="menu">
@@ -54,13 +68,24 @@
   </nav>
 </div>
 
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+
+<!-- DataTables Responsive JS -->
+<script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.5.0/js/responsive.bootstrap5.min.js"></script>
+
     
 </body>
 
 <!-- Seu script personalizado -->
 <script src="js/planilhas.js"></script>
+<script src="connection.php"></script>
 </html>
